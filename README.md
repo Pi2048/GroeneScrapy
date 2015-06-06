@@ -12,6 +12,8 @@ $ cd GroeneScrapy
 $ sudo pip install -r requirements.txt
 ```
 
+Als je problemen hebt met het installeren van Scrapy, zie http://doc.scrapy.org/en/0.24/intro/install.html.
+
 ## Configuratie
 
 Stel de volgende dingen in in `GroeneScrapy/settings.py`:
