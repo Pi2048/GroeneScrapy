@@ -36,5 +36,5 @@ class PdfSpider(scrapy.Spider):
     
     def download_pdf(self, response):
         item = response.meta['item']
-        with open(os.path.join(settings.GROENE_PDF_PATH, item['jaar'] + "-" + item['weeknummer'] + ".pdf"), 'w') as f:
+        with open(os.path.join(settings.GROENE_PDF_PATH, item['jaar'] + "-" + item['weeknummer'].zfill(2) + ".pdf"), 'w') as f:
             f.write(response.body)
